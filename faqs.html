@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complete Responsive Website Design Tutorial</title>
+    
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="css/all.min.css">
+    
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+    
+    <div class="logo">
+        <img src="image\logo-4.png" alt="Logo">
+        <!-- <div><a href="#" style="color:white; margin-left: 1em;">HREYS</a></div> -->
+    </div>
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="index.html#about">about</a>
+        <a href="index.html#services">courses</a>
+        <a href="index.html#plan">internship</a>
+        <a href="index.html#project">project</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- FAQs section starts  -->
+
+<section class="faqs" id="faqs">
+
+    <h1 class="heading"> FAQ <span>'s</span> </h1>
+    <div class="box-container" id="target-learning-container">
+        <div class='box'>
+            <img class="question" src='image/icons/plus-solid.svg'>
+            <div>What was the sequel process of Hrey'S Courses?</div>
+            <div class="answer">Hrey'S provide you new stack development every week with professional trainers.</div>
+        </div>
+        <div class='box'>
+            <img class="question" src='image/icons/plus-solid.svg'>
+            <div class="question">How many projects will trainee work on each courses?</div>
+            <div class="answer">Hrey'S learnings assign students 4 projects with weekly hands-on practice for each course.</div>
+        </div>
+        <div class='box'>
+            <img class="question" src='image/icons/plus-solid.svg'>
+            <div>What was the beneficial part on choosing Hrey'S?</div>
+            <div class="answer">Hrey'S afford pupil with Intent-Onboarding and make the part of future developments.</div>
+        </div>
+        <div class='box'>
+            <img class="question" src='image/icons/plus-solid.svg'>
+            <div>What was different about Hrey'S classes?</div>
+            <div class="answer">Hrey'S allot trainees with 2 trainers advantage. </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- FAQs section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="image/contact-img.svg" alt="">
+        </div>
+        <form id="contactForm">
+            <h3>get in touch</h3>
+            <input type="text" placeholder="Full name" class="box" id="contactName">
+            <input type="email" placeholder="Your email" class="box" id="contactEmail">
+            <input type="number" placeholder="Your number" class="box" id="contactNumber">
+            <div class="registration">
+                <div>
+                    Registration Type:
+                    <br>
+                    <div class="radioButtons">
+                        <label for="one">
+                            <input type="radio" id="one" name="radioInput" value="Course" onclick="document.getElementById('dynamic').hidden=false"/>
+                            Course
+                        </label>
+                        <br>
+                        <label for="two">
+                            <input type="radio" id="two" name="radioInput" value="Internship" onclick="document.getElementById('dynamic').hidden=false"/>
+                            Internship
+                        </label>
+                        <br>
+                        <label for="three">
+                            <input type="radio" id="three" name="radioInput" value="Queries" onclick="document.getElementById('dynamic').hidden=true" />
+                            Queries
+                        </label>
+                        <br>
+                    </div>
+                </div>
+                <div id="dynamic">
+                    <div id="dynamicHeading">Service: </div>
+                    <span>
+                        <select id="dynamicDropDown">
+                            <option value="Web Development">Web Development</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Python Development">Python Development</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                        </select>
+                    </span>
+                </div>
+                
+            </div>
+              
+            <textarea id="contactMessage" placeholder="Do you want to say anything?" class="box" cols="30" rows="10"></textarea>
+            <input type="button" value="send message" class="btn" id="trigger">
+        </form>
+    </div>
+    
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://www.instagram.com/hreys_techhub/" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/hreys-techhub/" target="_blank" class="fab fa-linkedin"></a>
+        <a href="mailto:hreystechhub@gmail.com" class="fa fa-envelope"></a>
+        <a href="tel:+919842077789" class="fa fa-phone fa-flip-horizontal"></a>
+        <a href="https://wa.me/919842077789" target="_blank" class="fab fa-whatsapp"></a>
+    </div>
+
+    <div class="credit">Copyright © 2022 All rights reserved by: <span><a href="#about">Hrey's Tech Hub</a></span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/navbar.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/firebase.js"></script>
+<script src="js/faqs.js"></script>
+</body>
+</html>
